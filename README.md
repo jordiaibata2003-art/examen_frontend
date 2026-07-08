@@ -99,7 +99,8 @@ user-list/
 └── user-list.css
 
 3. Le dossier Pages
-   Le dossier pages contient les différentes pages accessibles dans l'application.
+
+Le dossier pages contient les différentes pages accessibles dans l'application.
 
 Home
 
@@ -224,7 +225,7 @@ provideHttpClient()
 };
 
 provideRouter(routes) permet de gérer la navigation entre les différentes pages de l'application.
-provideHttpClient() prépare l'application à communiquer avec des services HTTP (API ou serveur externe).
+provideHttpClient() permet de préparer l'application à une éventuelle communication avec une API ou un serveur externe dans une évolution future.
 appConfig centralise les configurations nécessaires au démarrage de l'application.
 
 8. Gestion des données avec LocalStorage
