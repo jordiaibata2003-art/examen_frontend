@@ -1,12 +1,15 @@
 Projet : Système de Gestion de Stock
-partie 1; presententation génerale du projet
+
+partie 1: presententation génerale du projet
 
 1. Présentation du projet
-   Le Système de Gestion de Stock est une application web développée avec Angular 21 permettant de gérer les utilisateurs, les approvisionnements et les ventes d'une entreprise.
+
+Le Système de Gestion de Stock est une application web développée avec Angular 21 permettant de gérer les utilisateurs, les approvisionnements et les ventes d'une entreprise.
 
 L'application permet de suivre les opérations de gestion de stock à travers une interface simple et intuitive. Les données sont sauvegardées localement grâce au LocalStorage.
 
 2. Objectifs
+
    L'application permet de :
    Gérer l'authentification des utilisateurs ;
    Accéder à un tableau de bord ;
@@ -15,7 +18,8 @@ L'application permet de suivre les opérations de gestion de stock à travers un
    Gérer les ventes ;
    Sauvegarder les données localement.
 
-3. Technologies utilisées
+4. Technologies utilisées
+
    Angular 21
    TypeScript
    HTML5
@@ -25,8 +29,9 @@ L'application permet de suivre les opérations de gestion de stock à travers un
    Git/GitHub
    LocalStorage
 
-4. Fonctionnalités principales
-   Gestion des utilisateurs
+6. Fonctionnalités principales
+
+    Gestion des utilisateurs
    Ajouter un utilisateur ;
    Modifier un utilisateur ;
    Supprimer un utilisateur ;
@@ -40,8 +45,9 @@ L'application permet de suivre les opérations de gestion de stock à travers un
    Gérer les clients ;
    Modifier et supprimer une vente.
 
-5. Installation
-   Installation des dépendances :
+8. Installation
+
+Installation des dépendances :
 
 npm install
 
@@ -81,7 +87,9 @@ src/
 │
 ├── app.routes.ts
 │
-└── app.config.ts 2. Les composants (Components)
+└── app.config.ts
+
+2. Les composants (Components)
 
 Les composants Angular représentent les différentes interfaces de l'application.
 
