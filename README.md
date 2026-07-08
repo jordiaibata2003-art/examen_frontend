@@ -45,12 +45,16 @@ les technologies utilisées sont:
    Modifier un utilisateur ;
    Supprimer un utilisateur ;
    Afficher la liste des utilisateurs.
+
    Gestion des approvisionnements
    Ajouter des entrées de stock ;
-   Gérer les produits et fournisseurs ;
+
+    Gérer les produits et fournisseurs ;
    Modifier et supprimer un approvisionnement.
+
    Gestion des ventes
    Enregistrer les ventes ;
+
    Gérer les clients ;
    Modifier et supprimer une vente.
 
