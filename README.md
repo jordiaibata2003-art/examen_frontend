@@ -20,13 +20,22 @@ L'application permet de suivre les opérations de gestion de stock à travers un
 
 4. Technologies utilisées
 
-   Angular 21
-   TypeScript
+les technologies utilisées sont:
+  
+  Angular 21
+  
+  TypeScript
+  
    HTML5
+  
    CSS3
+  
    Node.js
+   
    npm
+   
    Git/GitHub
+  
    LocalStorage
 
 6. Fonctionnalités principales
