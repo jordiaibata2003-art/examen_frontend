@@ -1,0 +1,42 @@
+<div class="page">
+
+    <div class="container">
+
+        <div class="header">
+            <h1>👥 Liste des utilisateurs</h1>
+            <a routerLink="/user-form" class="btn-add">➕ Ajouter</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Email</th>
+                        <th>Rôle</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{ user.nom }}</td>
+                        <td>{{ user.prenom }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>
+                            <span class="badge" [class.admin]="user.role === 'admin'">
+                                {{ user.role }}
+                            </span>
+                        </td>
+                        <td>
+                            <a [routerLink]="['/user-form', user.id]" class="edit">✏️ Modifier</a>
+                            <button (click)="supprimer(user.id)" class="delete">🗑️ Supprimer</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>

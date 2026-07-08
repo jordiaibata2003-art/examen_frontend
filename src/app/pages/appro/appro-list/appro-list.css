@@ -1,0 +1,176 @@
+/* ===== CONTENEUR PRINCIPAL (FOND BLEU) ===== */
+.appro-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #264783 0%, #335ea0 50%, #0b398f 100%);
+    padding: 40px 20px;
+}
+
+.appro-card {
+    width: 100%;
+    max-width: 1200px;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+}
+
+.appro-card:hover {
+    transform: translateY(-5px);
+}
+
+.appro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header-left h1 {
+    font-size: 28px;
+    color: #0f1a2e;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    color: #5a6f8c;
+    font-size: 14px;
+    margin: 0;
+}
+
+.btn-add {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #0f1a2e, #1a2d4a);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 20px rgba(15, 26, 46, 0.3);
+}
+
+.btn-add:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(15, 26, 46, 0.4);
+}
+
+/* ===== TABLEAU ===== */
+.table-responsive {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #eef2f6;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+thead {
+    background: linear-gradient(135deg, #0f1a2e, #1a2d4a);
+}
+
+th {
+    padding: 16px 18px;
+    text-align: left;
+    font-weight: 700;
+    color: white;
+    border-bottom: 2px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #eef2f6;
+    color: #1e293b;
+    vertical-align: middle;
+}
+
+tbody tr:hover {
+    background: #f8fafc;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-edit {
+    background: #dbeafe;
+    color: #1a2d4a;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.btn-edit:hover {
+    background: #bfdbfe;
+    transform: scale(1.05);
+}
+
+.btn-delete {
+    background: #fee2e2;
+    color: #dc2626;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.btn-delete:hover {
+    background: #fecaca;
+    transform: scale(1.05);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px 0;
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .appro-card {
+        padding: 25px 20px;
+    }
+
+    .appro-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-add {
+        width: 100%;
+        justify-content: center;
+    }
+
+    th, td {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+}

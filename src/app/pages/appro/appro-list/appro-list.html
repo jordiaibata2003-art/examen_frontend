@@ -1,0 +1,41 @@
+<div class="appro-container">
+    <div class="appro-card">
+        <div class="appro-header">
+            <div class="header-left">
+                <h1>📦 Approvisionnements</h1>
+                <p class="subtitle">Gérez les entrées de stock</p>
+            </div>
+            <a routerLink="/appro-form" class="btn-add">+ Ajouter</a>
+        </div>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Produit</th>
+                        <th>Quantité</th>
+                        <th>Prix</th>
+                        <th>Fournisseur</th>
+                        <th>Date</th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of approvisionnements; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td><strong>{{ item.produit }}</strong></td>
+                        <td>{{ item.quantite }}</td>
+                        <td>{{ item.prix | currency:'EUR' }}</td>
+                        <td>{{ item.fournisseur }}</td>
+                        <td>{{ item.date }}</td>
+                        <td class="actions">
+                            <a [routerLink]="['/appro-form', item.id]" class="btn-edit">✏️ Modifier</a>
+                            <button (click)="deleteAppro(item.id)" class="btn-delete">🗑️ Supprimer</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

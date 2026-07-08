@@ -1,0 +1,73 @@
+<div class="form-container">
+    <div class="form-box">
+        <div class="form-header">
+            <h2>💰 {{ isEdit ? 'Modifier' : 'Nouvelle' }} vente</h2>
+            <a routerLink="/ventes" class="btn-back">← Retour</a>
+        </div>
+
+        <form (ngSubmit)="enregistrer()">
+            <div class="form-group">
+                <label>📦 Produit</label>
+                <input 
+                    type="text" 
+                    [(ngModel)]="vente.produit" 
+                    name="produit"
+                    placeholder="Nom du produit"
+                    required
+                >
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>📊 Quantité</label>
+                    <input 
+                        type="number" 
+                        [(ngModel)]="vente.quantite" 
+                        name="quantite"
+                        placeholder="0"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>💰 Prix unitaire</label>
+                    <input 
+                        type="number" 
+                        [(ngModel)]="vente.prix" 
+                        name="prix"
+                        placeholder="0.00"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>👤 Client</label>
+                <input 
+                    type="text" 
+                    [(ngModel)]="vente.client" 
+                    name="client"
+                    placeholder="Nom du client"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>📅 Date</label>
+                <input 
+                    type="date" 
+                    [(ngModel)]="vente.date" 
+                    name="date"
+                    required
+                >
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-save">
+                    💾 Enregistrer
+                </button>
+                <a routerLink="/ventes" class="btn-cancel">❌ Annuler</a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,80 @@
+<div class="form-container">
+    <div class="form-box">
+        <div class="form-header">
+            <h2>{{ isEdit ? '✏️ Modifier' : '📦 Nouvel' }} approvisionnement</h2>
+            <a routerLink="/appro" class="btn-back">← Retour</a>
+        </div>
+
+        <!-- ✅ Indicateur de modification -->
+        <div *ngIf="isEdit" class="edit-info">
+            🔄 Modification du produit #{{ appro.id }}
+        </div>
+
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label>🖥️ Produit</label>
+                <input 
+                    type="text" 
+                    [(ngModel)]="appro.produit" 
+                    name="produit"
+                    placeholder="Nom du produit"
+                    required
+                >
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>📦 Quantité</label>
+                    <input 
+                        type="number" 
+                        [(ngModel)]="appro.quantite" 
+                        name="quantite"
+                        placeholder="0"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label>💰 Prix unitaire</label>
+                    <input 
+                        type="number" 
+                        [(ngModel)]="appro.prix" 
+                        name="prix"
+                        placeholder="0.00"
+                        required
+                    >
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>🏢 Fournisseur</label>
+                <input 
+                    type="text" 
+                    [(ngModel)]="appro.fournisseur" 
+                    name="fournisseur"
+                    placeholder="Nom du fournisseur"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label>📅 Date</label>
+                <input 
+                    type="date" 
+                    [(ngModel)]="appro.date" 
+                    name="date"
+                    required
+                >
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-save">
+                    {{ isEdit ? '🔄 Mettre à jour' : '💾 Enregistrer' }}
+                </button>
+                <button type="button" (click)="onCancel()" class="btn-cancel">
+                    ❌ Annuler
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

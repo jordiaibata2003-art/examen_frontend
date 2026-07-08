@@ -1,0 +1,51 @@
+<div class="vente-container">
+    <div class="vente-card">
+        <!-- En-tête -->
+        <div class="vente-header">
+            <div class="header-left">
+                <h1>💰 Ventes</h1>
+                <p class="subtitle">Gérez vos ventes</p>
+            </div>
+            <a routerLink="/vente-form" class="btn-add">+ Nouvelle vente</a>
+        </div>
+
+        <!-- Tableau -->
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produit</th>
+                        <th>Quantité</th>
+                        <th>Prix</th>
+                        <th>Client</th>
+                        <th>Date</th>
+                        <th class="text-center">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let vente of ventes">
+                        <td><strong>{{ vente.produit }}</strong></td>
+                        <td>{{ vente.quantite }}</td>
+                        <td>{{ vente.prix | currency:'EUR' }}</td>
+                        <td>{{ vente.client }}</td>
+                        <td>{{ vente.date }}</td>
+                        <td class="actions">
+                            <!-- ✅ Bouton Modifier corrigé -->
+                            <a [routerLink]="['/vente-form', vente.id]" class="btn-edit">
+                                ✏️ Modifier
+                            </a>
+                            <button (click)="supprimer(vente.id)" class="btn-delete">
+                                🗑️ Supprimer
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Message si vide -->
+        <div *ngIf="ventes.length === 0" class="empty-state">
+            <p>📭 Aucune vente enregistrée.</p>
+        </div>
+    </div>
+</div>

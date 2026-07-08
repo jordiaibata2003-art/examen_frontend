@@ -1,0 +1,85 @@
+<div class="dashboard">
+
+    <!-- En-tête -->
+    <div class="header">
+        <div class="header-left">
+            <h1>📊 Tableau de bord</h1>
+            <p class="welcome">Bienvenue sur notre tableau de bord</p>
+        </div>
+        <div class="header-right">
+            <span class="user-badge">👤 Admin</span>
+            <a routerLink="/" class="btn-logout">🚪 Déconnexion</a>
+        </div>
+    </div>
+
+    <!-- Statistiques -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <span class="stat-icon">👥</span>
+            <div>
+                <h4>Utilisateurs</h4>
+                <p class="stat-number">12</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <span class="stat-icon">📦</span>
+            <div>
+                <h4>Produits</h4>
+                <p class="stat-number">48</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <span class="stat-icon">🔄</span>
+            <div>
+                <h4>Approvisionnements</h4>
+                <p class="stat-number">15</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <span class="stat-icon">💰</span>
+            <div>
+                <h4>Ventes</h4>
+                <p class="stat-number">23</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cartes d'actions -->
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">👤</div>
+            <h3>Utilisateurs</h3>
+            <p>Gérer les utilisateurs</p>
+            <a routerLink="/users">Accéder →</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📦</div>
+            <h3>Approvisionnements</h3>
+            <p>Gérer les approvisionnements</p>
+            <a routerLink="/appro">Accéder →</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛒</div>
+            <h3>Ventes</h3>
+            <p>Gérer les ventes</p>
+            <a routerLink="/ventes">Accéder →</a>
+        </div>
+
+        <div class="card card-logout">
+            <div class="icon">🚪</div>
+            <h3>Déconnexion</h3>
+            <p>Quitter l'application</p>
+            <a routerLink="/" class="btn-logout-card">Déconnexion</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 - Système de Gestion de Stock v1.0</p>
+    </div>
+
+</div>
