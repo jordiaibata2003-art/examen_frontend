@@ -1,3 +1,7 @@
+Nom: IBATA OBEKI
+
+Prenom: Jordia Mauricia
+
 Projet : Système de Gestion de Stock
 
 partie 1: presententation génerale du projet
@@ -18,7 +22,7 @@ L'application permet de suivre les opérations de gestion de stock à travers un
    Gérer les ventes ;
    Sauvegarder les données localement.
 
-4. Technologies utilisées
+3. Technologies utilisées
 
 les technologies utilisées sont:
   
@@ -38,7 +42,7 @@ les technologies utilisées sont:
   
    LocalStorage
 
-6. Fonctionnalités principales
+4. Fonctionnalités principales
 
     Gestion des utilisateurs
    Ajouter un utilisateur ;
@@ -58,7 +62,7 @@ les technologies utilisées sont:
    Gérer les clients ;
    Modifier et supprimer une vente.
 
-8. Installation
+5. Installation
 
 Installation des dépendances :
 
